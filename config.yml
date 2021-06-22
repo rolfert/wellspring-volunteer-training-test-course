@@ -1,0 +1,16 @@
+title: Wellspring Volunteer Training Test
+description: A draft of a Wellspring Hybrid Volunteer Training
+template:
+  repo: wellspring-volunteer-training-test-template
+  name: wellspring-volunteer-training-test
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
